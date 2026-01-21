@@ -20,9 +20,11 @@ Kiwi-Kart goes beyond just pricing by integrating a Carbon Footprint Estimator:
 This allows users to balance their financial savings with their environmental impact.
 
 # Tech Stack
--Backend: Python (FastAPI)
--Frontend: HTML, CSS, JavaScript
--Data Management: Pydantic for data validation and JSON for store/price storage.
+ Backend: Python (FastAPI)
+ 
+ Frontend: HTML, CSS, JavaScript
+ 
+ Data Management: Pydantic for data validation and JSON for store/price storage.
 
 # How to Run the Project
   - Navigate to the backend folder.
