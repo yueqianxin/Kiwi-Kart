@@ -25,9 +25,7 @@ Frontend: HTML, CSS, JavaScript
 Data Management: Pydantic for data validation and JSON for store/price storage.
 
 # How to Run the Project
-Start the Backend:
-  Navigate to the backend folder.
-  Install dependencies: pip install -r requirements.txt.
-  Run: uvicorn app.main:app --reload.
-Open the Frontend:
-  Simply open frontend/index.html in your web browser.
+  - Navigate to the backend folder.
+  - Install dependencies: pip install -r requirements.txt.
+  - Run: uvicorn app.main:app --reload.
+  - Simply open frontend/index.html in your web browser.
