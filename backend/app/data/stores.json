@@ -2,14 +2,14 @@
     {
         "id": "walmart_marine",
         "name": "Walmart (Marine Dr)",
-        "lat": 49.2100,
-        "lng": -123.1160
+        "lat": 49.3200, 
+        "lng": -123.1000
     },
     {
         "id": "tnt_richmond",
         "name": "T&T (Richmond)",
-        "lat": 49.1700,
-        "lng": -123.1300
+        "lat": 49.1753, 
+        "lng": -123.1299
     },
     {
         "id": "nofrills_kings",
@@ -20,43 +20,43 @@
     {
         "id": "saveon_broadway",
         "name": "Save-On-Foods (Broadway)",
-        "lat": 49.2620,
-        "lng": -123.1140
+        "lat": 49.26495, 
+        "lng": -123.1141
     },
     {
         "id": "superstore_burnaby",
         "name": "Superstore (Burnaby)",
-        "lat": 49.2270,
-        "lng": -122.9990
+        "lat": 49.2274,
+        "lng": -123.0010
     },
     {
         "id": "tandt_metrotown",
         "name": "T&T (Metrotown)",
-        "lat": 49.2265,
-        "lng": -123.0030
+        "lat": 49.2253, 
+        "lng": 122.9994
     },
     {
         "id": "wholefoods_cambie",
         "name": "Whole Foods (Cambie)",
-        "lat": 49.2660,
-        "lng": -123.1155
+        "lat": 49.2641, 
+        "lng": -123.1153
     },
     {
         "id": "freshco_richmond",
         "name": "FreshCo (Richmond)",
-        "lat": 49.1665,
-        "lng": -123.1385
+        "lat": 49.15607813689167,
+        "lng": -123.15344114408573
     },
     {
         "id": "safeway_kerrisdale",
         "name": "Safeway (Kerrisdale)",
-        "lat": 49.2300,
-        "lng": -123.1550
+        "lat": 49.2145, 
+        "lng": -123.1242
     },
     {
         "id": "iga_downtown",
         "name": "IGA (Downtown)",
-        "lat": 49.2830,
-        "lng": -123.1210
+        "lat": 49.2824, 
+        "lng": -123.1248
     }
 ]

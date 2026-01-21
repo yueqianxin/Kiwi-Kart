@@ -836,7 +836,7 @@ const MODE_NOTE = {
 
     // Prepare store results with distance and maps link
     const storeResults = data.single_store_totals
-      .map((storeTotal) => {
+        .map((storeTotal) => {
         const storeInfo = storeMap[storeTotal.store_id] || {};
         const storeItems = (data.prices || [])
           .filter((p) => p.store_id === storeTotal.store_id)
@@ -856,25 +856,25 @@ const MODE_NOTE = {
         const isBestStore =
           data.best_single_store && data.best_single_store.store_id === storeTotal.store_id;
 
-        // --- FIX: Use storeInfo.address for Google Maps if available and valid ---
-        let mapsLink = "";
-        if (
-          storeInfo.lat !== undefined &&
-          storeInfo.lng !== undefined &&
-          !isNaN(Number(storeInfo.lat)) &&
-          !isNaN(Number(storeInfo.lng))
-        ) {
-          // If coordinates are valid, use them
-          mapsLink = `https://www.google.com/maps/search/?api=1&query=${storeInfo.lat},${storeInfo.lng}`;
-        } else if (storeInfo.address && typeof storeInfo.address === "string" && storeInfo.address.trim().length > 0) {
-          // If address is available, use it for better accuracy
-          mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(storeInfo.address)}`;
-        } else {
-          // Fallback to store name
-          const storeName = encodeURIComponent(storeInfo.name || storeTotal.store_id);
-          mapsLink = `https://www.google.com/maps/search/?api=1&query=${storeName}`;
-        }
-        // --- END FIX ---
+    // --- FIX: Use storeInfo.address for Google Maps if available and valid ---
+    let mapsLink = "";
+    if (
+    storeInfo.lat !== undefined &&
+    storeInfo.lng !== undefined &&
+    !isNaN(Number(storeInfo.lat)) &&
+    !isNaN(Number(storeInfo.lng))
+    ) {
+    // If coordinates are valid, use them
+    mapsLink = `https://www.google.com/maps/search/?api=1&query=${storeInfo.lat},${storeInfo.lng}`;
+    } else if (storeInfo.address && typeof storeInfo.address === "string" && storeInfo.address.trim().length > 0) {
+    // If address is available, use it for better accuracy
+    mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(storeInfo.address)}`;
+    } else {
+    // Fallback to store name
+    const storeName = encodeURIComponent(storeInfo.name || storeTotal.store_id);
+    mapsLink = `https://www.google.com/maps/search/?api=1&query=${storeName}`;
+    }
+    // --- END FIX ---
 
         return {
           store_id: storeTotal.store_id,
